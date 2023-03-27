@@ -1,0 +1,2 @@
+TODO --  add a 404 page too
+Bug -- before our data loads, if you directly paste the url "/product/:di" ( substitute an Id in there) , in that case, the webpage breaks

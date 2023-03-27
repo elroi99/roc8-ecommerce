@@ -1,20 +1,12 @@
 import "./App.css";
-import { StoreProvider } from "./store/StoreProvider";
-import { useEffect } from "react";
-import axios from "axios";
+import RouteJunction from "./RouteJuntion";
 
 function App() {
-  useEffect(() => {
-    (async () => {
-      try{
-        axios.get("") 
-
-      }catch(){
-        
-      }
-    })();
-  }, []);
-  return <div className='App'></div>;
+  return (
+    <>
+      <RouteJunction />
+    </>
+  );
 }
 
 export default App;
