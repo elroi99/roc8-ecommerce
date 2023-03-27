@@ -81,7 +81,7 @@ export function ProductListings() {
               searchResults().map((product) => <ListingPageProductCard key={`${product.id}${product.title.substring(2, 10)}`} isRenderedInCart={false} productInfo={product} dispatch={dispatch} />)
             }
             {
-              searchResults().length === 0 ? <Typography gutterBottom variant="h5" component="div"> No matches </Typography> : null
+              (searchResults().length === 0 && state.isLoading === false) ? <Typography gutterBottom variant="h5" component="div"> No matches </Typography> : null
             }
           </Box>
         </Container>
